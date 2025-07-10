@@ -106,3 +106,40 @@ button:hover {
     box-shadow: 0 5px 1rem rgba(255, 248, 107, 0.2);
 }
 
+button:disabled {
+    transition: initial;
+    transform: translateX(0);
+    box-shadow: initial;
+    cursor: not-allowed;
+    color: #121214;
+}
+
+#iaResponse {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    border-left: solid 4px #43E7AD;
+}
+
+#iaResponse ul {
+    padding-left: 1.5rem;
+    opacity: 0.8;
+}
+
+#iaResponse p {
+    color: aliceblue;
+}
+
+.loading {
+    animation: pulse 1.5s infinite;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes pulse {
+    50%{
+        opacity: 0.5;
+    }
+}
